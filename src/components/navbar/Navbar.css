@@ -29,6 +29,12 @@ color: #2A3663;
     color: #006A67;  
 }
 
+/* Active link style */
+.nav-item a.active {
+    color: #006A67;
+    font-weight: 600;
+  }
+  
 .open-close {
     font-size: 1.6rem;
     display: flex;

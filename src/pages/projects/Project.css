@@ -1,0 +1,46 @@
+.projects-container h1 {
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight: 400;
+    text-transform: capitalize;
+    background-color: rgba(158, 135, 4, 0.107);
+    width: fit-content;
+    padding: 0.8rem;
+    color: #169e9a;
+    line-height: 22px;
+}
+
+.projects-container h2 {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    width: fit-content;
+    color: #006A67;
+    border-bottom: 2px solid rgba(158, 135, 4, 0.559);
+}
+
+.project-card{
+    margin-top: 2rem;
+}
+
+.project-card{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media only screen and (max-width: 600px){
+    .project-card{
+       flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .project-card{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: space-between;
+    }   
+}

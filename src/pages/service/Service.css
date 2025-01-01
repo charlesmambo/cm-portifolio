@@ -1,10 +1,12 @@
 .services h1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: inherit;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: capitalize;
     background-color: rgba(158, 135, 4, 0.107);
     width: fit-content;
+    padding: 0.8rem;
+    color: #169e9a;
 }
 
 .services h2 {
@@ -34,27 +36,26 @@
 /* Style for the Swiper navigation buttons */
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: #006A67; 
-    color: rgb(59, 188, 202) !important; 
+    background-color: rgba(15, 93, 126, 0.368); 
+    color: rgb(39, 167, 145) !important; 
     padding: 10px;
     border-radius: 2rem; 
-    height: 25px !important;
-    width: 25px !important;
+    height: 22px !important;
+    width: 22px !important;
     font-size: 9px !important; 
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease; 
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    transition: all 0.9s ease; 
+    border: 2px solid rgb(39, 167, 145)  !important;
     overflow: hidden;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    background-color: #2980b9; 
-    box-shadow: rgba(3, 101, 214, 0.628) 0px 0px 0px 3px;
-    background-color: #23b6b1; 
-    color: rgb(57, 152, 13) !important; 
+    color: rgb(234, 198, 15) !important; 
+    border: 2px solid rgb(210, 216, 26) !important;
+    background-color: #006A67 !important; 
 }
 
 /* Optional: Position the buttons */
@@ -102,8 +103,8 @@
 .swiper-button-prev {
     padding: 10px;
     border-radius: 2rem; 
-    height: 30px !important;
-    width: 30px !important;
+    height: 22px !important;
+    width: 22px !important;
 
 }
 }
