@@ -1,0 +1,46 @@
+.footer{
+    padding: 2rem 4rem;
+    box-shadow: rgba(0, 106, 103, 0.256) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.048) 0px 18px 36px -18px inset;
+    font-weight: 500;
+
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-items{
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.footer-lg {
+    font-size: 1.1rem;
+}
+
+.ft-icon{
+    font-size: 1.7rem;
+    color: #006A67;
+    transition: all 0.9s ease;
+}
+.ft-icon:hover{
+    font-size: 1.7rem;
+    color: #084e4e;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px){
+    .footer{
+        padding: 1.2rem;
+    
+    } 
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+    } 
+}

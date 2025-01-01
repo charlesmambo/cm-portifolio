@@ -1,0 +1,133 @@
+.services h1 {
+    font-size: 1.3rem;
+    font-family: inherit;
+    font-weight: 300;
+    text-transform: capitalize;
+    background-color: rgba(158, 135, 4, 0.107);
+    width: fit-content;
+}
+
+.services h2 {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    width: fit-content;
+    color: #006A67;
+    border-bottom: 2px solid rgba(158, 135, 4, 0.559);
+}
+
+.card-container {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.swiper {
+    padding: 15px 0px 25px 0px!important;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+/* Style for the Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #006A67; 
+    color: rgb(59, 188, 202) !important; 
+    padding: 10px;
+    border-radius: 2rem; 
+    height: 25px !important;
+    width: 25px !important;
+    font-size: 9px !important; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; 
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    overflow: hidden;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #2980b9; 
+    box-shadow: rgba(3, 101, 214, 0.628) 0px 0px 0px 3px;
+    background-color: #23b6b1; 
+    color: rgb(57, 152, 13) !important; 
+}
+
+/* Optional: Position the buttons */
+.swiper-button-next {
+    right: -1px !important; 
+}
+
+.swiper-button-prev {
+    left: -1px !important; 
+}
+
+/* Move the pagination circles down by 30px */
+.swiper-pagination {
+    margin-top: 10px !important;  
+    color: #006A67; 
+}
+.swiper-pagination-bullets {
+    transform: translateY(10px) !important; 
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .services h1 {
+        color: #1e395c;
+        font-weight: 400;
+    } 
+    .card-container {
+       align-items: center;
+    }
+
+    /* Optional: Position the buttons */
+.swiper-button-next {
+    right: 1px !important; 
+    top: 280px !important;
+}
+
+.swiper-button-prev {
+    left: 1px !important; 
+    top: 280px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    padding: 10px;
+    border-radius: 2rem; 
+    height: 30px !important;
+    width: 30px !important;
+
+}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .card-container {
+        align-items: center;
+        justify-content: center;
+     } 
+     .swiper-button-next,
+     .swiper-button-prev {
+         padding: 10px;
+         border-radius: 2rem; 
+         height: 30px !important;
+         width: 30px !important;
+     
+     }
+     .swiper-button-next {
+        right: 1px !important; 
+        top: 320px !important;
+    }
+    
+    .swiper-button-prev {
+        left: 1px !important; 
+        top: 320px !important;
+    }
+}

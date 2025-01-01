@@ -1,0 +1,23 @@
+.ctc-btn{
+    border: none;
+    font-family: inherit;
+    background-color: #006A67;
+    padding: 0.8rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    color: #e4e5eb;
+    text-transform: uppercase;
+    transition: all 0.9s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.ctc-btn:hover{
+    background-color: transparent; 
+    border: 1.2px solid #006A67;
+    color: #006A67; 
+}

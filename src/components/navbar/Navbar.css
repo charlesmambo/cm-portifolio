@@ -1,0 +1,80 @@
+.navbar-container{
+    font-weight: 600;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    position: relative;
+}
+
+.logo{
+font-weight: 800;
+font-family: "Ysabeau SC", serif;
+font-size: 1.5rem;
+color: #2A3663;
+}
+
+.highlight {
+    color: rgb(0, 106, 103);
+}
+
+.nav-item{
+    padding: 0 1rem;
+}
+
+.nav-item a{
+        font-size: 1rem;
+        color: #365379; 
+        transition: all 0.9s ease; 
+}
+
+.nav-item a:hover{
+    color: #006A67;  
+}
+
+.open-close {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    display: none;
+}
+
+.close-icon {
+    color: red;
+}
+.close-icon,
+.ham-icon {
+    cursor: pointer;
+}
+
+.op-icon{
+    transition: all 0.9s ease;    
+}
+.op-icon:hover{
+    transform: scale(1.1);
+}
+
+.mobile-nav {
+    position: absolute;
+    top: 6rem;
+    left: 50%; 
+    transform: translateX(-50%); 
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 90%;
+    max-width: 400px; 
+    box-sizing: border-box;
+    padding: 1rem;
+    border-top: 4px solid #006A67;
+    background-color: #C4DAD2;
+}
+
+@media only screen and (max-width: 600px) {
+    .open-close {
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        display: block;
+    }
+     .nav-item-container{
+        display: none;
+     }
+  }

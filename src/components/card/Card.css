@@ -1,0 +1,64 @@
+.card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 21vw;
+    border-radius: 0.5rem;
+    min-height: 75vh;
+}
+
+.card-content {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-img{
+    display: block;
+    width: 100%;
+    height: 30vh;
+    border-top-right-radius:0.5rem;
+    border-top-left-radius:0.5rem;
+}
+
+.card-content h3{
+    color: #006A67; 
+    font-size: 1.4rem;
+}
+
+.order-btn {
+    width: 100% !important;
+    text-align: center;
+    border-radius: 0.5rem !important; 
+    margin: 0.3rem 0;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #006A67;
+    font-family: "Ysabeau SC", serif;
+}
+
+@media only screen and (max-width: 600px){
+    .card{
+        width: 100%;
+    } 
+    
+    .card{
+        min-height: 70vh;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .card{
+        width: 40vw;
+        min-height: 58vh;
+    }  
+}
