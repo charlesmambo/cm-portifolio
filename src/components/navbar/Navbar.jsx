@@ -7,16 +7,16 @@ import { SiMinutemailer } from "react-icons/si";
 
 const Navbar = ({ setView }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState('home'); // State to track active link
+  const [activeLink, setActiveLink] = useState('home'); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Handle active link when clicked
   const handleLinkClick = (link) => {
     setActiveLink(link);
     setView(link);
+    setIsOpen(false); // Close the menu
   };
 
   return (
@@ -26,7 +26,7 @@ const Navbar = ({ setView }) => {
         <li className="nav-item">
           <a 
             href="#" 
-            className={activeLink === 'home' ? 'active' : ''} // Apply active class if this is the active link
+            className={activeLink === 'home' ? 'active' : ''} 
             onClick={() => handleLinkClick('home')}
           >
             Home
@@ -35,18 +35,29 @@ const Navbar = ({ setView }) => {
         <li className="nav-item">
           <a 
             href="#" 
-            className={activeLink === 'projects' ? 'active' : ''} // Apply active class if this is the active link
+            className={activeLink === 'projects' ? 'active' : ''} 
             onClick={() => handleLinkClick('projects')}
           >
             Projects
           </a>
         </li>
         <li className="nav-item">
-          <a href="#">About Me</a>
+          <a
+             href="#" 
+             className={activeLink === 'about' ? 'active' : ''} 
+             onClick={() => handleLinkClick('about')}
+           >
+            About Me
+          </a>
         </li>
         <li className="nav-item contact">
-          <Btn label="Let’s Chat" Icon={SiMinutemailer} onClick={() => alert('Chat button clicked!')} />
-        </li>
+          <a
+               href="#" 
+               className={activeLink === 'contact' ? 'active' : ''} 
+               onClick={() => handleLinkClick('contact')}
+             >
+            <Btn label="Let’s Chat" Icon={SiMinutemailer}/> </a>
+          </li>
       </ul>
       <div className="open-close">
         {!isOpen ? (
@@ -76,10 +87,21 @@ const Navbar = ({ setView }) => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#">About Me</a>
+            <a
+               href="#" 
+               className={activeLink === 'about' ? 'active' : ''} 
+               onClick={() => handleLinkClick('about')}
+             >
+              About Me
+            </a>
           </li>
           <li className="nav-item contact">
-            <Btn label="Let’s Chat" Icon={SiMinutemailer} onClick={() => alert('Chat button clicked!')} />
+          <a
+               href="#" 
+               className={activeLink === 'contact' ? 'active' : ''} 
+               onClick={() => handleLinkClick('contact')}
+             >
+            <Btn label="Let’s Chat" Icon={SiMinutemailer}/> </a>
           </li>
         </ul>
       )}

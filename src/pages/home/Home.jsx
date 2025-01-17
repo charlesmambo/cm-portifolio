@@ -5,10 +5,11 @@ import Service from '../service/Service';
 import '../home/Home.css';
 import Footer from '../../components/footer/Footer';
 import Project from '../projects/Project';
+import About from '../about/About';
+import Contact from '../contact/Contact';
 
 const Home = () => {
-  const [view, setView] = useState('home'); // 'home' for Service, 'projects' for Project
-
+  const [view, setView] = useState('home'); 
   return (
     <div className='home'>
       <Navbar setView={setView} />
@@ -16,10 +17,10 @@ const Home = () => {
       <div className="main-box container">
         <div className="home-box">
           <CSSTransition
-            in={view === 'home'} // Condition for the transition
-            timeout={300} // Duration of the transition
-            classNames="fade" // Custom class name for fade-in/fade-out
-            unmountOnExit // Unmount the component when it's not in view
+            in={view === 'home'} 
+            timeout={300} 
+            classNames="fade" 
+            unmountOnExit 
           >
             <Service />
           </CSSTransition>
@@ -32,6 +33,25 @@ const Home = () => {
           >
             <Project />
           </CSSTransition>
+
+          <CSSTransition
+            in={view === 'about'}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit
+          >
+            <About/>
+          </CSSTransition>
+
+          <CSSTransition
+            in={view === 'contact'}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit
+          >
+            <Contact/>
+          </CSSTransition>
+          
         </div>
       </div>
 
