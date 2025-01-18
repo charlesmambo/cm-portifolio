@@ -34,7 +34,7 @@ form {
     font-weight: 500;
     box-shadow: rgba(50, 50, 93, 0.135) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.1) 0px 18px 36px -18px inset;
     background-color: #006a6724;
-    color: #006A67;
+    color: rgb(0, 106, 103);
 }
 
 ::placeholder{
@@ -50,9 +50,74 @@ form {
     text-transform: capitalize;
     height: 15vh;
 }
-
-.style{
+.cc-wrapper{
     width: 50%;
-    height: 10vh;
-    border: 2px solid red;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.ctc-details{
+    box-shadow: rgba(0, 106, 103, 0.094) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.169) 0px 18px 36px -18px inset;
+    border-radius: 0.2rem;
+    width: fit-content;
+    padding: 1.8rem;
+    border-bottom: 3px solid #b4a111;
+    border-right: 5px solid #b4a111;
+    border-bottom-right-radius: 2rem;
+    
+}
+
+.ctc-text{
+    margin-top: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.ctc-text-icon{
+    color: #b4a111;
+    font-size: 1.2rem;
+}
+
+.ctc-text span {
+    color: #006A67;
+    font-weight: 600;
+}
+.ctc-style-img{
+    display: block;
+    width: 30%;
+}
+
+@media only screen and (max-width: 600px){
+    .ctc-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ctc-style-img{
+        display: none;
+    }
+    .ctc-details{
+        width: 100%;
+        border:  2px solid #b4a111;
+        border-top-left-radius: 2rem;
+        box-sizing: border-box;
+    }
+    .cc-wrapper{
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .ctc-style-img{
+        display: block;
+        width: 10%;
+    }
 }
