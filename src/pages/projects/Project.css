@@ -16,6 +16,7 @@
     width: fit-content;
     color: #006A67;
     border-bottom: 2px solid rgba(158, 135, 4, 0.559);
+    padding-bottom: 0.2rem;
 }
 
 .project-card{

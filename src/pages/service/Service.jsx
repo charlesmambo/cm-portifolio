@@ -45,7 +45,7 @@ const Service = () => {
                         imageSrc={Google}
                         title="Google Business Profile"
                         description="Looking to take your business to the next level? I specialize in creating and managing Google Business Profiles to help businesses boost their online visibility, attract more customers, and stand out in the market. Let me help you get noticed online and grow your brand!"
-                        price="600"
+                        price="800"
                         buttonLabel="Let’s Chat"
                         onButtonClick={handleChatClick}
                     />
@@ -67,7 +67,7 @@ const Service = () => {
                         imageSrc={Ui}
                         title="UI/UX Designer"
                         description="Looking for someone to turn your ideas into reality for your website or mobile app? I specialize in creating fully functional and interactive designs that are visually stunning, with a focus on crafting user-friendly interfaces and seamless experiences."
-                        price="800"
+                        price="1500"
                         buttonLabel="Let’s Chat"
                         onButtonClick={handleChatClick}
                     />
@@ -78,7 +78,7 @@ const Service = () => {
                         imageSrc={Web}
                         title="Website Development"
                         description="Looking for a web developer? I build responsive, user-friendly websites tailored to your needs, whether it’s a landing page, web application, or portfolio. I ensure your site is functional, optimized, and delivers a great user experience. 3-page website"
-                        price="1500"
+                        price="2000"
                         buttonLabel="Let’s Chat"
                         onButtonClick={handleChatClick}
                     />
@@ -89,7 +89,7 @@ const Service = () => {
                         imageSrc={Code}
                         title="Code Maintenance"
                         description="Looking for a skilled web developer to maintain and improve your website? I specialize in modifying, updating, and enhancing your site to fix bugs, improve functionality, and adapt to evolving requirements."
-                        price="600"
+                        price="800"
                         buttonLabel="Let’s Chat"
                         onButtonClick={handleChatClick}
                     />
@@ -111,7 +111,7 @@ const Service = () => {
                         imageSrc={C}
                         title="Collaboration"
                         description="Are you a designer looking for a developer to turn your designs into awesome products? Or maybe you're a developer searching for a skilled collaborator to bring your vision to life?"
-                        price="00"
+                        price="400"
                         buttonLabel="Let’s Chat"
                         onButtonClick={handleChatClick}
                     />

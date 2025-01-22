@@ -1,5 +1,6 @@
 import React from 'react';
 import '../about/About.css'
+import Skills from '../../components/skills/Skills';
 
 const About = () => {
   return (
@@ -22,6 +23,8 @@ const About = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt commodi sint harum quisquam veniam, maxime itaque blanditiis. Corporis possimus laudantium quas! Tempora sed enim iure fuga reprehenderit aspernatur! Atque ullam ducimus quis recusandae dolorum voluptatibus impedit, nulla enim aliquam repellendus provident, dolores temporibus quisquam facilis at quidem possimus! Suscipit, est. Quaerat iste ipsum dolorum soluta dignissimos neque, nam commodi accusantium.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt commodi sint harum quisquam veniam, maxime itaque blanditiis. Corporis possimus laudantium quas! Tempora sed enim iure fuga reprehenderit aspernatur! Atque ullam ducimus quis recusandae dolorum voluptatibus impedit, nulla enim aliquam repellendus provident, dolores temporibus quisquam facilis at quidem possimus! Suscipit, est. Quaerat iste ipsum dolorum soluta dignissimos neque, nam commodi accusantium.</p>
         </div>
+
+        <Skills/>
     </div>
   )
 }

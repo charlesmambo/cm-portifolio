@@ -10,6 +10,7 @@ const Footer = () => {
   return (
     <div className='footer'>
         <footer>
+            
             <div className="footer-logo">
                 <p>Your potential is far greater <br /> than any obstacle you face.</p>
             </div>
