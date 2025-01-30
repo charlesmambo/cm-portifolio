@@ -1,19 +1,26 @@
 .abt-wrapper{
-    padding: 4rem 0rem;
     position: relative;
+    line-height: 22px;
 }
 .img-profile{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8rem;
-    position: relative;
+    margin-top: 2.4rem;
 }
 .img{
     box-shadow: rgba(0, 0, 0, 0.297) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 0.5rem;
     width: 18vw;
     height: 30vh;
+    overflow: hidden;
+}
+
+.img img{
+    width: 100%;
+    box-sizing: border-box;
+    
 }
 
 .main-img {
@@ -22,6 +29,7 @@
     position: absolute;
     z-index: 1;
 }
+
 
 .left-img {
     z-index: 0;
@@ -32,7 +40,7 @@
 }
 
 .intro{
-    margin-top: 8rem;
+    margin-top: 4.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;

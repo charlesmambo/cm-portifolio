@@ -4,6 +4,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { SiFrontendmentor } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -18,20 +19,24 @@ const Footer = () => {
 
             <ul className="footer-items">
                 <li className="ft-items">
-                    <a href=""><IoLogoWhatsapp className='ft-icon'/>
+                    <a href="https://web.whatsapp.com/" target="_blank"><IoLogoWhatsapp className='ft-icon'/>
                     </a>
                 </li>
                 <li className="ft-items">
-                    <a href=""><FaLinkedin className='ft-icon'/>
+                    <a href="https://www.linkedin.com/in/charlesmambo/" target="_blank"><FaLinkedin className='ft-icon'/>
                     </a>
                 </li>
                 <li className="ft-items">
-                    <a href="">
+                    <a href="https://www.instagram.com/charles.the.awe.developer/" target="_blank">
                         <FaInstagramSquare className='ft-icon'/>
                     </a>
                 </li>
                 <li className="ft-items">
-                    <a href=""><SiFrontendmentor className='ft-icon'/>
+                    <a href="https://www.frontendmentor.io/profile/charlesmambo" target="_blank"><SiFrontendmentor className='ft-icon'/>
+                    </a>
+                </li>
+                <li className="ft-items">
+                    <a href="https://github.com/charlesmambo" target="_blank"><FaGithub className='ft-icon'/>
                     </a>
                 </li>
             </ul>

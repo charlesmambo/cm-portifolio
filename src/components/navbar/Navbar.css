@@ -17,6 +17,7 @@ color: #2A3663;
 
 .nav-item{
     padding: 0 1rem;
+    list-style: none; 
 }
 
 .nav-item a{

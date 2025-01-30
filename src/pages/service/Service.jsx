@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../service/Service.css';
 import Card from '../../components/card/Card';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,8 +17,10 @@ import C from '../../assets/c.jpg';
 import Logo from '../../assets/logo.webp';
 
 const Service = () => {
+    const navigate = useNavigate();
+
     const handleChatClick = () => {
-        alert('Chat button clicked!');
+        navigate('/contact'); // Navigate to the Contact page
     };
 
     return (
