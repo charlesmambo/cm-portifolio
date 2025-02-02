@@ -9,13 +9,13 @@ const About = () => {
     <div className='abt-wrapper'>
         <div className="img-profile">
             <div className="img left-img">
-               {/* <img src={IMG} alt=""  />  */}
+               <img src={IMG} alt=""  /> 
             </div>
             <div className="img main-img">
-            {/* <img src={IMG} alt=""  />  */}
+            <img src={IMG} alt=""  /> 
             </div>
             <div className="img right-img">
-            {/* <img src={IMG} alt=""  />  */}
+            <img src={IMG} alt=""  /> 
             </div>
         </div>
 

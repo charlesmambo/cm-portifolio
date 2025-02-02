@@ -1,6 +1,7 @@
 .abt-wrapper{
     position: relative;
     line-height: 22px;
+    padding-top: 1rem;
 }
 .img-profile{
     display: flex;
