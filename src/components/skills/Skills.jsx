@@ -3,7 +3,6 @@ import '../skills/Skills.css';
 import { CiLinkedin } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-
 const Skills = () => {
   return (
     <div className='skills-wrapper'>
