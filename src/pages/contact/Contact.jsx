@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com'; // Import EmailJS
+import emailjs from 'emailjs-com';
 import '../contact/Contact.css';
 import Btn from '../../components/primaryBtn/Btn';
 import { MdEmail } from "react-icons/md";
@@ -17,58 +17,45 @@ const Contact = () => {
     message: ''
   });
 
-  const [errors, setErrors] = useState({
-    email: ''
-  });
-
+  const [errors, setErrors] = useState({});
   const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    if (name === 'email') {
-      validateEmail(value);
-    }
-  };
 
-  const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      setErrors({ ...errors, email: 'Please enter a valid email address.' });
-    } else {
-      setErrors({ ...errors, email: '' });
-    }
+    setErrors((prevErrors) => ({ ...prevErrors, [name]: value.trim() ? '' : prevErrors[name] }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Check if all fields are filled
-    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
-      alert('Please fill in all fields');
+    const newErrors = {};
+    Object.keys(formData).forEach((key) => {
+      if (!formData[key].trim()) {
+        newErrors[key] = 'This field is required';
+      }
+    });
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
       return;
     }
 
-    // Send the email using EmailJS
     const templateParams = {
       name: formData.name,
       email: formData.email,
       phone: formData.phone,
       message: formData.message
     };
-    
 
     emailjs.send('service_6pj5tlt', 'template_946unap', templateParams, 'mXQbLhq7JTLs0tFp7')
-      .then((response) => {
+      .then(() => {
         setSuccess(true);
         setTimeout(() => {
           setSuccess(false);
-          setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            message: ''
-          });
+          setFormData({ name: '', email: '', phone: '', message: '' });
+          setErrors({});
         }, 3000);
       })
       .catch((error) => {
@@ -84,26 +71,11 @@ const Contact = () => {
         <div className="cc-wrapper">
           <div className="ctc-details">
             <h3>info...</h3>
-            <div className="ctc-text">
-              <MdEmail className='ctc-text-icon' />
-              <span>charles@cmwebtech.co.za</span>
-            </div>
-            <div className="ctc-text">
-              <HiPhone className='ctc-text-icon' />
-              <span>+2762 3286 152</span>
-            </div>
-            <div className="ctc-text">
-              <IoLogoWhatsapp className='ctc-text-icon' />
-              <span>+2762 3286 152</span>
-            </div>
-            <div className="ctc-text">
-              <FaRegAddressCard className='ctc-text-icon' />
-              <span>29 Bancroft rugby road</span>
-            </div>
-            <div className="ctc-text">
-              <IoMdClock className='ctc-text-icon' />
-              <span>09:00AM - 16:00</span>
-            </div>
+            <div className="ctc-text"><MdEmail className='ctc-text-icon' /><span>charles@cmwebtech.co.za</span></div>
+            <div className="ctc-text"><HiPhone className='ctc-text-icon' /><span>+2762 3286 152</span></div>
+            <div className="ctc-text"><IoLogoWhatsapp className='ctc-text-icon' /><span>+2762 3286 152</span></div>
+            <div className="ctc-text"><FaRegAddressCard className='ctc-text-icon' /><span>29 Bancroft rugby road</span></div>
+            <div className="ctc-text"><IoMdClock className='ctc-text-icon' /><span>09:00AM - 16:00</span></div>
           </div>
           <img src={SEND} alt="" className='ctc-style-img' />
         </div>
@@ -113,11 +85,12 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              placeholder='Name'
+              placeholder="Name"
               value={formData.name}
               onChange={handleChange}
-              className={`${success ? 'success-border' : ''}`}
+              className={`${errors.name ? 'error-border' : ''} ${success ? 'success-border' : ''}`}
             />
+            {errors.name && <span className="error-text">{errors.name}</span>}
           </div>
           <div className="form-control">
             <label htmlFor="email">Email:</label>
@@ -126,8 +99,8 @@ const Contact = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder='Your Email'
-              className={`${success ? 'success-border' : ''}`}
+              placeholder="Your Email"
+              className={`${errors.email ? 'error-border' : ''} ${success ? 'success-border' : ''}`}
             />
             {errors.email && <span className="error-text">{errors.email}</span>}
           </div>
@@ -138,9 +111,10 @@ const Contact = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder='Phone'
-              className={`${success ? 'success-border' : ''}`}
+              placeholder="Phone"
+              className={`${errors.phone ? 'error-border' : ''} ${success ? 'success-border' : ''}`}
             />
+            {errors.phone && <span className="error-text">{errors.phone}</span>}
           </div>
           <div className="form-control">
             <label htmlFor="message">Message:</label>
@@ -148,9 +122,10 @@ const Contact = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              placeholder='Your Message'
-              className={`${success ? 'success-border' : ''}`}
+              placeholder="Your Message"
+              className={`${errors.message ? 'error-border' : ''} ${success ? 'success-border' : ''}`}
             ></textarea>
+            {errors.message && <span className="error-text">{errors.message}</span>}
           </div>
           <div className="form-control">
             <Btn label="Send Message" className='order-btn' />
