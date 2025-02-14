@@ -59,7 +59,7 @@
 
 /* Optional: Position the buttons */
 .swiper-button-next {
-    right: -1px !important; 
+    right: 5px !important; 
 }
 
 .swiper-button-prev {
@@ -90,7 +90,7 @@
 
     /* Optional: Position the buttons */
 .swiper-button-next {
-    right: 1px !important; 
+    right: -1px !important; 
     top: 278px !important;
 }
 
@@ -100,13 +100,25 @@
 }
 .swiper-button-next,
 .swiper-button-prev {
-    padding: 6px;
+    padding: 5px;
     border-radius: 2rem; 
     height: 5px !important;
     width: 5px !important;
 
 }
 }
+
+
+
+.swiper-slide {
+    animation: moveLeft 3s ease-in-out infinite;
+    transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.05);
+}
+
 
 @media only screen and (min-width: 600px) and (max-width: 1000px){
     .card-container {

@@ -9,6 +9,7 @@ import { FaRegAddressCard } from "react-icons/fa";
 import { IoMdClock } from "react-icons/io";
 import SEND from '../../assets/send.png';
 
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -71,7 +72,7 @@ const Contact = () => {
         <div className="cc-wrapper">
           <div className="ctc-details">
             <h3>info...</h3>
-            <div className="ctc-text"><MdEmail className='ctc-text-icon' /><span>charles@cmwebtech.co.za</span></div>
+            <div className="ctc-text"><MdEmail className='ctc-text-icon' /><span>chylah11st@gmal.com</span></div>
             <div className="ctc-text"><HiPhone className='ctc-text-icon' /><span>+2762 3286 152</span></div>
             <div className="ctc-text"><IoLogoWhatsapp className='ctc-text-icon' /><span>+2762 3286 152</span></div>
             <div className="ctc-text"><FaRegAddressCard className='ctc-text-icon' /><span>29 Bancroft rugby road</span></div>
@@ -127,6 +128,7 @@ const Contact = () => {
             ></textarea>
             {errors.message && <span className="error-text">{errors.message}</span>}
           </div>
+
           <div className="form-control">
             <Btn label="Send Message" className='order-btn' />
           </div>

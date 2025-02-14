@@ -7,11 +7,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8rem;
-    margin-top: 2.4rem;
+    gap: 14rem;
+    margin-top: 3.4rem;
 }
 .img{
-    box-shadow: rgba(0, 0, 0, 0.297) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     border-radius: 0.5rem;
     width: 18vw;
     height: 30vh;
@@ -77,11 +77,14 @@
     }
 
     .intro{
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
 
     .abt-wrapper{
-        padding: 2rem 0rem;
+        padding: 0.5rem 0rem;
+    }
+    .img-profile{
+        margin-top: 0rem;
     }
 }
 
@@ -93,17 +96,17 @@
         height: 20vh;
     }
     .img-profile{
-        margin-top: 2rem;
+        margin-top: 2.7rem;
     }
     .main-img {
         width: 47vw;
-        height: 35vh;
+        height: 30vh;
     }
 
     .intro{
-        margin-top: 10rem;
+        margin-top: 6rem;
     }
     .img-profile{
-        gap: 12rem;
+        gap: 22rem;
     }
 }
