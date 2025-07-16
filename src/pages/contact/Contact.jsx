@@ -4,11 +4,8 @@ import '../contact/Contact.css';
 import Btn from '../../components/primaryBtn/Btn';
 import { MdEmail } from "react-icons/md";
 import { HiPhone } from "react-icons/hi";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaRegAddressCard } from "react-icons/fa";
 import { IoMdClock } from "react-icons/io";
 import SEND from '../../assets/send.png';
-
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -67,15 +64,14 @@ const Contact = () => {
 
   return (
     <div className='contact-me'>
+      
       <h2>Let’s Create Something Amazing Together!</h2>
       <div className="ctc-info">
         <div className="cc-wrapper">
           <div className="ctc-details">
             <h3>info...</h3>
-            <div className="ctc-text"><MdEmail className='ctc-text-icon' /><span>chylah11st@gmal.com</span></div>
+            <div className="ctc-text"><MdEmail className='ctc-text-icon' /><span>chylah11st@gmail.com</span></div>
             <div className="ctc-text"><HiPhone className='ctc-text-icon' /><span>+2762 3286 152</span></div>
-            <div className="ctc-text"><IoLogoWhatsapp className='ctc-text-icon' /><span>+2762 3286 152</span></div>
-            <div className="ctc-text"><FaRegAddressCard className='ctc-text-icon' /><span>29 Bancroft rugby road</span></div>
             <div className="ctc-text"><IoMdClock className='ctc-text-icon' /><span>09:00AM - 16:00</span></div>
           </div>
           <img src={SEND} alt="" className='ctc-style-img' />
@@ -132,6 +128,18 @@ const Contact = () => {
           <div className="form-control">
             <Btn label="Send Message" className='order-btn' />
           </div>
+{/*           
+        <div className="success-popup">
+              Thank you for reaching out. Your message has been sent successfully — we’ll get back to you shortly.
+
+        </div> */}
+      
+          {success && (
+        <div className="success-popup">
+              Thank you for reaching out. Your message has been sent successfully — we’ll get back to you shortly.
+
+        </div>
+      )}
         </form>
       </div>
     </div>

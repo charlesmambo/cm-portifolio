@@ -47,7 +47,7 @@ form {
 
 .form-control textarea{
     resize: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     height: 15vh;
 }
 .cc-wrapper{
@@ -85,7 +85,7 @@ form {
     box-shadow: rgba(0, 106, 103, 0.094) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.169) 0px 18px 36px -18px inset;
     border-radius: 0.2rem;
     width: fit-content;
-    padding: 1.8rem;
+    padding: 2rem 1.8rem;
     border-bottom: 3px solid #b4a111;
     border-right: 5px solid #b4a111;
     border-bottom-right-radius: 2rem;
@@ -112,6 +112,42 @@ form {
     display: block;
     width: 30%;
 }
+.success-popup {
+  background-color: #adcbca;
+  color: #006c19;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid #c3e6cb;
+  animation: fadeInOut 3s ease-in-out forwards;
+  width:38vw;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  position: absolute;
+  top: 10rem;
+  right: 4rem;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+} 
+
 
 @media only screen and (max-width: 600px){
     .ctc-info{
@@ -135,8 +171,24 @@ form {
     form {
         width: 100%;
     }
-    
+    .success-popup {
+  background-color: #adcbca;
+  color: #006c19;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid #c3e6cb;
+  animation: fadeInOut 3s ease-in-out forwards;
+  width:58vw;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  position: absolute;
+  top: 10rem;
+  right: 4rem;
 }
+}
+
 
 @media only screen and (min-width: 600px) and (max-width: 1000px){
     .ctc-style-img{

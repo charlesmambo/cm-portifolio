@@ -37,18 +37,19 @@
 /* Style for the Swiper navigation buttons */
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: rgba(15, 93, 126, 0.368); 
-    color: rgb(39, 167, 145) !important; 
+    background-color: rgb(15, 93, 126); 
+    color: rgb(250, 255, 254) !important; 
     padding: 10px;
     border-radius: 2rem; 
-    height: 1px !important;
-    width: 1px !important;
+    height: 2px !important;
+    width: 2px !important;
     font-size: 9px !important; 
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.9s ease; 
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .swiper-button-next:hover,
