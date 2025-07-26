@@ -20,7 +20,7 @@ const Service = () => {
     const navigate = useNavigate();
 
     const handleChatClick = () => {
-        navigate('/contact'); // Navigate to the Contact page
+        navigate('/contact'); 
     };
 
     return (
@@ -59,7 +59,7 @@ const Service = () => {
                         imageSrc={Logo}
                         title="Logo Design"
                         description="Do you need a logo with a unique and memorable story? A logo that captures the essence of your business, serves your needs, or breathes new life into your brand? I offer high-quality designs tailored to make a lasting impression and elevate your identity."
-                        price="400"
+                        price="480"
                         buttonLabel="Let’s Chat"
                         onButtonClick={handleChatClick}
                     />
@@ -70,7 +70,7 @@ const Service = () => {
                         imageSrc={Ui}
                         title="UI/UX Designer"
                         description="Looking for someone to turn your ideas into reality for your website or mobile app? I specialize in creating fully functional and interactive designs that are visually stunning, with a focus on crafting user-friendly interfaces and seamless experiences."
-                        price="1500"
+                        price="30 00"
                         buttonLabel="Let’s Chat"
                         onButtonClick={handleChatClick}
                     />
@@ -81,7 +81,7 @@ const Service = () => {
                         imageSrc={Web}
                         title="Website Development"
                         description="Looking for a web developer? I build responsive, user-friendly websites tailored to your needs, whether it’s a landing page, web application, or portfolio. I ensure your site is functional, optimized, and delivers a great user experience. 3-page website"
-                        price="2000"
+                        price="3500"
                         buttonLabel="Let’s Chat"
                         onButtonClick={handleChatClick}
                     />
@@ -103,7 +103,7 @@ const Service = () => {
                         imageSrc={Ment}
                         title="Mentorship"
                         description="Are you a beginner or someone looking to step into the web development industry but don’t know where to start? I’m here to guide you! Whether you're a student or self-learning, I’ll help you navigate the industry and set you on the right path."
-                        price="400"
+                        price="500"
                         buttonLabel="Let’s Chat"
                         onButtonClick={handleChatClick}
                     />
@@ -114,7 +114,7 @@ const Service = () => {
                         imageSrc={C}
                         title="Collaboration"
                         description="Are you a designer looking for a developer to turn your designs into awesome products? Or maybe you're a developer searching for a skilled collaborator to bring your vision to life?"
-                        price="400"
+                        price="800"
                         buttonLabel="Let’s Chat"
                         onButtonClick={handleChatClick}
                     />
